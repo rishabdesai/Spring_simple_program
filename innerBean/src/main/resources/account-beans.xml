@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<!-- dependency -->
+	
+	<bean id="p1" class="page.PersonImpl">
+		<property name="name" value="Ram" />
+		<property name="age" value="35" />
+		<property name="addr" value="Pune" />
+	</bean>
+
+	<!-- constructor based DI -->
+	<bean id="p2" class="page.PersonImpl">
+		<property name="name" value="Sham" />
+		<property name="age" value="39" />
+		<property name="addr" value="Mumbai" />
+	</bean>
+
+ 	
+ 	<!-- dependent bean: option1- using ref (setter based) -->
+	
+	<bean id="a1" class="page.AccountImpl">
+		<property name="accId" value="101" />
+		<property name="type" value="saving" />
+		<property name="balance" value="10000" />
+		<property name="accHolder" ref="p1" />  
+	</bean>
+
+
+	 	<!-- option2 -->
+	<bean id="a2" class="page.AccountImpl">
+		<property name="accId" value="101" />
+		<property name="type" value="saving" />
+		<property name="balance" value="10000" />
+		<property name="accHolder">   
+			<bean class="page.PersonImpl">
+				<property name="name" value="kumar" />
+				<property name="age" value="31" />
+				<property name="addr" value="Delhi" />
+			</bean>
+		</property>
+	</bean>
+
+</beans>
