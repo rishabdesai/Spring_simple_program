@@ -13,3 +13,9 @@
 - Inheritance relationship, polymorphism
 - xml based Dependency injection having bean with 'HAS-A' relation (Composition)
 
+### autoWire_XmlBased
+- setter based
+- byType, byName
+
+### autoWire_AnnotationBased
+- setter based

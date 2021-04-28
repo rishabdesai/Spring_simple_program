@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<!-- autowire bytype = looking for datatype which is matching with corresponding setter method -->
+	<!--  
+	<bean id="p1" class="page.PersonImpl">
+		<property name="name" value="Ram" />
+		<property name="age" value="35" />
+		<property name="addr" value="Pune" />
+	</bean>
+	
+ 	<bean id="consoleLogger" class="page.ConsoleLoggerImpl"/>
+ 	
+	<bean id="a1" class="page.AccountImpl" autowire="byType">
+		<property name="accId" value="101" />
+		<property name="type" value="saving" />
+		<property name="balance" value="10000" />
+	</bean>
+	-->
+
+
+	<!-- autowire : byName = by name of beam to match property name in class  -->
+	<bean id="accHolder" class="page.PersonImpl">
+		<property name="name" value="Ram" />
+		<property name="age" value="35" />
+		<property name="addr" value="Pune" />
+	</bean>
+	
+ 	<bean id="logger" class="page.ConsoleLoggerImpl"/>
+ 	
+	<bean id="a1" class="page.AccountImpl" autowire="byName">
+		<property name="accId" value="101" />
+		<property name="type" value="saving" />
+		<property name="balance" value="10000" />
+	</bean>
+	
+	
+
+	
+</beans>
