@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+	<!-- setter based DI -->
+	<bean id="b3" class="page.BoxImpl">
+	<property name="length" value="5"/>
+	<property name="breadth" value="4"/>
+	<property name="height" value="3"/>
+	</bean>
+
+	<!-- constructor based DI -->
+	<bean id="b4" class="page.BoxImpl">
+	<constructor-arg index="0" value="2"/>
+	<constructor-arg index="1" value="3"/>
+	<constructor-arg index="2" value="4"/>
+	</bean>
+
+</beans>
