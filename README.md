@@ -31,3 +31,9 @@
 - automatic configuration for creation of bean using 
 - using `@Component` and `@ComponentScan`
 - Ex. Circle (interface) and Circle implementation (class) 
+
+### JavaConfiguration-3
+- using `@Component`, `@AutoWired`, `@ComponentScan`
+- Ex. Account has AccountHolder (composition)
+
+### JavaConfiguration-4
