@@ -37,3 +37,7 @@
 - Ex. Account has AccountHolder (composition)
 
 ### JavaConfiguration-4
+- use of `@Value`, `@Bean`
+- SPEL syntax
+- When you don't want to pickup entire object, but want to pickup some part of object - using @Value
+- Ex. 
