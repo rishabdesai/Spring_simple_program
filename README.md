@@ -56,6 +56,6 @@
 - Only one singleton bean object is created
 - each call to getBean() creates new prototype bean, but same copy of singleton bean is autowired with them
 
-
-
-
+### SpringBean_scopes3
+- prototype bean inside singleton beam
+- since there is only one singleton bean, there is only single prototype bean.
