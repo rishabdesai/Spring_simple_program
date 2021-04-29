@@ -40,4 +40,8 @@
 - use of `@Value`, `@Bean`
 - SPEL syntax
 - When you don't want to pickup entire object, but want to pickup some part of object - using @Value
-- Ex. 
+- Ex. Account has-a passbook
+
+### JavaConfiguration-5
+- use of properties file to read data using `@Value` 
+- to locate properties file - `@PropertySource`
