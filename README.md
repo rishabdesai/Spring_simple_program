@@ -47,9 +47,15 @@
 - to locate properties file - `@PropertySource`
 
 ### SpringBean_scopes
-- Singleton and prototype 
+- Singleton and prototype
+- singleton bean, when application context is loaded, all singleton bean objects are created. Default scope of bean object. Call to getBean() will always return the same objects reference (i.e. No new object is created)
+- prototype bean, each call to getBean() will create a new object and return it. 
 
 ### SpringBean_scopes2
 - Singleton bean inside prototype bean
+- Only one singleton bean object is created
+- each call to getBean() creates new prototype bean, but same copy of singleton bean is autowired with them
+
+
 
 
