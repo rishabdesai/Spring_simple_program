@@ -45,3 +45,11 @@
 ### JavaConfiguration-5
 - use of properties file to read data using `@Value` 
 - to locate properties file - `@PropertySource`
+
+### SpringBean_scopes
+- Singleton and prototype 
+
+### SpringBean_scopes2
+- Singleton bean inside prototype bean
+
+
