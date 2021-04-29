@@ -19,4 +19,10 @@
 
 ### autoWire_AnnotationBased
 - setter based
-- 
+
+### JavaConfiguration1
+- use of AnnotationConfigApplicationContext
+- manual configuration for creation of bean
+- using `@Configuration` , `@Bean`
+- not preferred way
+
