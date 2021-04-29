@@ -59,3 +59,18 @@
 ### SpringBean_scopes3
 - prototype bean inside singleton beam
 - since there is only one singleton bean, there is only single prototype bean.
+
+### SpringBean_scopes4
+- option-1
+- prototype bean inside singleton beam - to create new copy of singleton bean inside prototype bean
+- using ApplcationContextAware
+- The singleton bean can be inherited from ApplicationContextAware interface
+- When its object is created, container calls its setApplicationContext() method and give current ApplicationContext object. This object can be used to create new prototype bean each time (as per requirement) 
+- no autowiring
+
+### SpringBean_scopes5
+- option-2
+- prototype bean inside singleton beam - to create new copy of singleton bean inside prototype bean
+- using @Lookup method
+- The singleton bean class contains method returing prototype bean.
+- if method is annoted with @Lookup, each call to the method will be internally call 
