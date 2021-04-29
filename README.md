@@ -72,5 +72,6 @@
 - option-2
 - prototype bean inside singleton beam - to create new copy of singleton bean inside prototype bean
 - using @Lookup method
-- The singleton bean class contains method returing prototype bean.
-- if method is annoted with @Lookup, each call to the method will be internally call 
+- The singleton bean class contains method returning prototype bean.
+- if method is annotated with `@Lookup`, each call to the method will be internally call ctx.getBean().
+- Hence for prototype beans, it returns new bean each time.
