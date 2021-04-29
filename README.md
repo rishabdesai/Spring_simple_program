@@ -20,9 +20,14 @@
 ### autoWire_AnnotationBased
 - setter based
 
-### JavaConfiguration1
-- use of AnnotationConfigApplicationContext
+### JavaConfiguration-1
 - manual configuration for creation of bean
 - using `@Configuration` , `@Bean`
+- use of AnnotationConfigApplicationContext
 - not preferred way
+- Ex. Box (interface) and Box implementation (class) 
 
+### JavaConfiguration-2
+- automatic configuration for creation of bean using 
+- using `@Component` and `@ComponentScan`
+- Ex. Circle (interface) and Circle implementation (class) 
