@@ -92,6 +92,11 @@
 	10. create jsp page 
 	
 ### u_springMVC_readFormData
+- controller + view
+- simple form application
+
+
+### u_springMVC_addModel
 - controller + view + model
 - simple form application
 
