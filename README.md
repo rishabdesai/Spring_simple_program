@@ -76,6 +76,8 @@
 - if method is annotated with `@Lookup`, each call to the method will be internally call ctx.getBean().
 - Hence for prototype beans, it returns new bean each time.
 
+------------------------------------------
+
 ### u_springMVC_helloWorld
 - simple Spring project to display 'Hello world' in browser
 - controller + view
