@@ -108,5 +108,7 @@
 - use of @RequestMapping()
 - serves as parent mapping for controller 
 
-	
+### u_springMVC_FormTags
+- use of MVC form tags
+- use of @ModelAttribute for data binding	
 
