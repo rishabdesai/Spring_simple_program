@@ -99,6 +99,10 @@
 ### u_springMVC_addModel
 - controller + view + model
 - simple form application
+- use of HttpServletRequest and Model 
+
+### u_springMVC_RequestParam_binding
+- use of @RequestParam 
 
 	
 
