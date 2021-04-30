@@ -75,3 +75,18 @@
 - The singleton bean class contains method returning prototype bean.
 - if method is annotated with `@Lookup`, each call to the method will be internally call ctx.getBean().
 - Hence for prototype beans, it returns new bean each time.
+
+### u_springMVC_helloWorld
+- simple Spring project to display 'Hello world' in browser
+- setting:
+	1. create maven project with war packaging
+	2. in pom.xml add all dependencies of spring, jstl, servlet etc
+	3. in web.xml, Configure Spring MVC Dispatcher Servlet.
+	4. in web.xml, Map all requests to the DispatcherServlet for handling.
+	5. create xml file in WEB-INF -say 'spring-servlet.xml'
+	6. inside spring-servlet.xml, add support for component scanning - `<context:component-scan base-package="pages"/>`
+	7. inside spring-servlet.xml, Add support for conversion, formatting & validation support `<mvc:annotation-driven/>`
+	8. inside spring-servlet.xml, Define Spring MVC view resolver 
+	9. create controller class  `@Controller`, define controller method `@RequestMapping("/")` , add request mapping to controller method, return view name 
+	10. create jsp page 
+
