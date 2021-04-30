@@ -104,5 +104,9 @@
 ### u_springMVC_RequestParam_binding
 - use of @RequestParam 
 
+### u_springMVC_RequestMapping
+- use of @RequestMapping()
+- serves as parent mapping for controller 
+
 	
 
